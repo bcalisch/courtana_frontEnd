@@ -1,0 +1,19 @@
+.crossedOut{
+	text-decoration: line-through;
+	color:red	;
+}
+.clear{
+	text-decoration: none;
+	color:black	;
+}
+.nav{
+	overflow:scroll;
+
+}
+
+.word{
+	cursor: pointer;
+}
+.error{
+	background-color: red;
+}
