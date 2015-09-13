@@ -1,47 +1,38 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid topBar">
+<div class="pageWrapper">
+<nav class="navbar navbar-default navbar-fixed-top" style="width: 1000px; margin: auto; background-color: white; border-bottom-style: none;">
+    <div class="container-fluid topBar" style="height: 50px">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
         </div>
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" href="#/library_home"><img alt="Brand"  src="/app/img/catalog_header.png"></a>
-                </li>
+                <span><a class="navbar-brand" href="#/library_home"><img alt="Brand"  src="/app/img/catalog_header.png" style="width: 250px"></a>
+                </span>
 
-                <li class="navbar-right"><form class="">
+                <span style="float: right; padding-top: 35px;"><form class="">
                     <div class="login-box ">
 
-                        <div class=" col-md-offset-5 ">
-                            <!--<p class="alert-danger error-p {{visibility}}">The login information you have presented is not acceptable. Please try   again.-->
-
-                            </p>
-                            <p>Login:</p><input type="text" name="user" placeholder="Username" ng-model="user.library_card">
+                            <input type="text" name="user" placeholder="Username" ng-model="user.library_card">
 
                             <input type="password" name="pass" placeholder="Password"
                                    ng-model="user.pin">
 
 
-                            <input type="submit" name="login" class="login loginmodal-submit" ng-click="verify()">
+                            <input type="submit" name="login" class="login loginmodal-submit" ng-click="verify">
 
 
                         </div>
 
                     </div>
-                </form></li>
-
-
-            </ul>
-
+                </form>
+                </span>
         </div>
-
-
+        <div class="searchBar" style="background-color: lightblue; margin-left: 14px; margin-right: 14px; margin-bottom: 5px">
+            <input type="text" name="search" placeholder="Search..." style="margin: 4px;"/><img src="/app/img/search.png" style="width: 30px" />
+        </div>
+        <div class="dummyContent">
+            <img src="/app/img/dummy.png" style="width: 1000px; padding-left: 14px; padding-right: 14px;">
+        </div>
     </div>
 </nav>
-
-<div class="login-container">
-
-
-
-
 </div>
-</div>
+
