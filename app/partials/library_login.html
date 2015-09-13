@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid topBar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="#/library_home"><img alt="Brand"  src="/app/img/catalog_header.png"></a>
+                </li>
+
+                <li class="navbar-right"><form class="">
+                    <div class="login-box ">
+
+                        <div class=" col-md-offset-5 ">
+                            <!--<p class="alert-danger error-p {{visibility}}">The login information you have presented is not acceptable. Please try   again.-->
+
+                            </p>
+                            <p>Login:</p><input type="text" name="user" placeholder="Username" ng-model="user.library_card">
+
+                            <input type="password" name="pass" placeholder="Password"
+                                   ng-model="user.pin">
+
+
+                            <input type="submit" name="login" class="login loginmodal-submit" ng-click="verify()">
+
+
+                        </div>
+
+                    </div>
+                </form></li>
+
+
+            </ul>
+
+        </div>
+
+
+    </div>
+</nav>
+
+<div class="login-container">
+    <p>{{user.library_card}}</p>
+    <p>{{user.pin}}</p>
+
+
+    <button ng-click="countUp()">{{storage.counter}}</button>
+    <button ng-click="save()">Save</button>
+
+
+</div>
+</div>

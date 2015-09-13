@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid topBar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="#/library_home"><img alt="Brand"
+                                                                       src="/app/img/catalog_header.png"></a>
+                </li>
+
+                <li class="navbar-right"> Welcome, {{user[2]}}!</li>
+                <li class="navbar-right"><a ng-click="logout()">Logout</a></li>
+
+
+            </ul>
+
+        </div>
+        <div class="citationList">
+            <ul class="" data-ng-repeat="citation in citations">
+                <li>{{citation[0]}}</li>
+                <li>{{citation[1]}}</li>
+                <li>{{citation[2]}}</li>
+                <li>test</li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+</div>

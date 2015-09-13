@@ -8,8 +8,9 @@ courtanaServices.factory('Api',
  function($resource){
 	return {
 
-	Words: $resource('http://localhost:7878/parsingplayground', {}, {
-		get:{method:'GET', isArray:true}
+
+	Citation: $resource('http://localhost:7878/citations/:drivers_license_number', {drivers_license_number:'@driversLicense'}, {
+		get:{method:'GET',params:{drivers_license_number:'@driversLicense'}, isArray:true}
 	}),
 	VerifyUser: $resource('http://localhost:7878/parsingplayground', {}, {
 		get:{method:'POST', params:{}}

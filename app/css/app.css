@@ -6,21 +6,10 @@ body {
 
 html{
   display:block;
+  font-family: Lantinghei SC, sans-serif;
 }
 
 
-.phone-images {
-  background-color: white;
-  width: 450px;
-  height: 450px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-}
-
-.phones {
-  list-style: none;
-}
 
 .thumb {
   float: left;
@@ -29,52 +18,6 @@ html{
   height: 100px;
   width: 100px;
 }
-
-.phones li {
-  clear: both;
-  height: 115px;
-  padding-top: 15px;
-}
-
-/** Detail View **/
-img.phone {
-  float: left;
-  margin-right: 3em;
-  margin-bottom: 2em;
-  background-color: white;
-  padding: 2em;
-  height: 400px;
-  width: 400px;
-  display: none;
-}
-
-img.phone:first-child {
-  display: block;
-}
-
-
-ul.phone-thumbs {
-  margin: 0;
-  list-style: none;
-}
-
-ul.phone-thumbs li {
-  border: 1px solid black;
-  display: inline-block;
-  margin: 1em;
-  background-color: white;
-}
-
-ul.phone-thumbs img {
-  height: 100px;
-  width: 100px;
-  padding: 1em;
-}
-
-ul.phone-thumbs img:hover {
-  cursor: pointer;
-}
-
 
 ul.specs {
   clear: both;
@@ -99,7 +42,7 @@ ul.specs > li{
     margin-left:.05%;
     height:94%;
 
-    
+
 }
 
 ul.specs > li > span{
@@ -116,4 +59,39 @@ h1 {
 }
 .error{
   background-color: red;
+}
+
+.topBar{
+  height:6em;
+  margin-bottom: 1em;
+}
+
+.centeredTitle{
+  text-align:right;
+  font-size: 2em;
+  padding:1em;
+  margin-left:2em;
+}
+.login-container{
+  margin-top:8em;
+  display:inline-block;
+}
+img{
+  max-width: 20em !important;
+  margin-top: 1em;
+}
+.navbar-right{
+  width:70%;
+
+}
+.navbar-nav{
+  width:100%;
+}
+
+
+.citationList{
+
+  margin-top: 10%;
+  margin-left: 40%;
+  text-align:left;
 }

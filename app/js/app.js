@@ -7,7 +7,8 @@ var courtana = angular.module('courtana', [
   'courtanaAnimations',
   'courtanaControllers',
   'courtanaFilters',
-  'courtanaServices'
+  'courtanaServices',
+  'ngStorage'
 ]);
 
 courtana.config(['$routeProvider',
@@ -21,8 +22,17 @@ courtana.config(['$routeProvider',
         templateUrl: 'partials/login.html',
         controller: 'LoginController'
       }).
+        when('/library_login', {
+          templateUrl: 'partials/library_login.html',
+          controller: 'Library_loginController'
+        }).
+        when('/library_home', {
+          templateUrl: 'partials/library_home.html',
+          controller: 'Library_homeController'
+        }).
 
-      otherwise({
+
+        otherwise({
         redirectTo: '/home'
       });
   }]);
