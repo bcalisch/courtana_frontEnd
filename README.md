@@ -1,4 +1,4 @@
-# AngularJS Phone Catalog Tutorial Application
+# Globalhack 5 Library Account - Court System Tie-in
 
 This application is a prototype from Globalhack 5 in St. Louis, MO.  The application creates a spoof local library page with a more prominent user login.  The idea behind this project is to enable library users to quickly be notified if they have any pressing legal information whenever they log in to use the library system.  If the application finds any local citations from the municipal information server, the user is notified with a red court icon next to their name.  
 
