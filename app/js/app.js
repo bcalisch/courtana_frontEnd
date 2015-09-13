@@ -30,6 +30,14 @@ courtana.config(['$routeProvider',
           templateUrl: 'partials/library_home.html',
           controller: 'Library_homeController'
         }).
+        when('/citationPage', {
+          templateUrl: 'partials/citationPage.html',
+          controller: 'CitationPageController'
+        }).
+        when('/infoPage', {
+          templateUrl: 'partials/infoPage.html',
+          controller: 'InfoPageController'
+        }).
 
 
         otherwise({

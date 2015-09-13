@@ -1,3 +1,4 @@
+<div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid topBar">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -12,13 +13,19 @@
                 </ul>
 
                 <ul class="nav navbar-right rightSide">
-                    <li class="  navbar-right"> <p>Welcome, {{user[2]}}!  <a href="#" ng-click="logout()">Logout</a>
-                        <a class="courtImage"    ng-click ="checkCitations()" ><img
-                            src="/app/img/{{courtImage}}"> </a></li>
+                    <li class="  navbar-right"> <p>Welcome, {{user[2]}}!  <a ng-click="logout()">Logout</a>
+                        <a class="courtImage" href="#/citationPage" ng-click="logout()"><img
+                                src="/app/img/{{courtImage}}"> </a></li>
                     </p></li>
                 </ul>
             </ul>
         </div>
+        <ul data-ng-repeat="citation in citations">
+            <li>{{citation[0]}}</li>
+            <li>{{citation[1]}}</li>
+            <li>{{citation[2]}}</li>
+        </ul>
     </div>
 </nav>
+
 </div>
